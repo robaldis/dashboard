@@ -3,7 +3,7 @@ resources:
 - name: source-code
   type: git
   source:
-    uri: git@github.com:robaldis/${name}.git
+    uri: git@github.com:robaldis/dashboard.git
     branch: master
     private_key: ((git.privatekey))
 - name: version
