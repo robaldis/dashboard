@@ -1,0 +1,62 @@
+
+services: |
+  - Management:
+      - Uptime:
+          icon: github.png
+          href: http://uptime.robertaldis.com
+      - TrueNas:
+          icon: truenas.png
+          href: http://192.168.109.119
+      - PVE1:
+          icon: proxmox.png
+          href: http://pve3.robertaldis.com
+      - PVE2:
+          icon: proxmox.png
+          href: http://pve4.robertaldis.com
+      - Concourse:
+          icon: concourse.png
+          href: http://concourse.robertaldis.com
+      - Grafana:
+          icon: grafana.png
+          href: http://grafana.robertaldis.com
+      - Harbor:
+          icon: harbor.png
+          href: http://harbor.robertaldis.com
+  - Applications:
+      - Meal Prep:
+          icon: mealie.png
+          href: http://mealie.robertaldis.com
+      - NextCloud:
+          icon: nextcloud.png
+          href: http://nextcloud.robertaldis.com
+      - Vaultwarden:
+          icon: vaultwarden.png
+          href: http://vaultwarden.robertaldis.com
+
+bookmarks: |
+  - Developer:
+      - Github:
+          - abbr: GH
+            href: https://github.com/robaldis
+      - HackerTab:
+          - abbr: HT
+            href: https://now.hackertab.dev/
+
+
+widgets: | 
+  - kubernetes:
+      cluster:
+        show: true
+        cpu: true
+        memory: true
+        showLabel: true
+        label: "cluster"
+      nodes:
+        show: true
+        cpu: true
+        memory: true
+        showLabel: true
+  - search:
+      provider: google
+      showSearchSuggestions: true
+      target: _blank

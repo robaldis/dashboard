@@ -1,0 +1,15 @@
+
+#!/bin/bash
+
+helm repo update
+
+# Create if does not already exist
+kubectl create namespace dashboard --dry-run=client -o yaml | kubectl apply -f -
+
+# Delpy with helm
+helm upgrade --install dashboard -n dashboard dashboard-chart -f values.yaml -f config.yaml
+
+# Restart pods
+kubectl delete --all pod -n dashboard
+
+

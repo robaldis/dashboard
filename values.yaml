@@ -1,0 +1,24 @@
+deployments:
+  dashboard:  # name of the application
+    # image
+    image: ghcr.io/gethomepage/homepage
+    tag: v0.9.6
+    port: 3000 # this is the port that the application uses
+
+    replicas: 1
+
+    env: 
+      {}
+
+    storage:
+      config: # name the storage, Nothing can have the same name in the namespace
+        class: nfs # only been tested with longhorn
+        path: /app/config #Path in the container
+        capacity: 1G
+
+    ingress: 
+      url: dash.robertaldis.com
+      cert_env: staging #staging or production
+
+secrets:
+  []
