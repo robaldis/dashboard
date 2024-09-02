@@ -41,6 +41,9 @@ bookmarks: |
       - HackerTab:
           - abbr: HT
             href: https://now.hackertab.dev/
+      - OnShape:
+          - abbr: OS
+            href: https://cad.onshape.com/documents
 
 
 widgets: | 
