@@ -4,7 +4,7 @@ services: |
       - Uptime:
           icon: github.png
           href: http://uptime.robertaldis.com
-      - TrueNas:
+      - True Nas:
           icon: truenas.png
           href: http://192.168.109.119
       - PVE1:
