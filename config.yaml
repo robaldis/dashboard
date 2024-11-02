@@ -6,7 +6,7 @@ services: |
           href: http://uptime.robertaldis.com
       - True Nas:
           icon: truenas.png
-          href: http://192.168.109.119
+          href: http://nas.robertaldis.com
       - PVE1:
           icon: proxmox.png
           href: http://pve3.robertaldis.com
