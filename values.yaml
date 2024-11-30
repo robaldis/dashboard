@@ -18,7 +18,7 @@ deployments:
 
     ingress: 
       url: dash.robertaldis.com
-      cert_env: staging #staging or production
+      cert_env: production #staging or production
 
 secrets:
   []
